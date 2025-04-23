@@ -2,18 +2,18 @@
 import PackageDescription
 
 let package = Package(
-    name: "HighlightedText",
+    name: "HighlightableText",
     platforms: [
         .iOS(.v18),
         .macOS(.v15)
     ],
     products: [
         .library(
-            name: "HighlightedText",
-            targets: ["HighlightedText"]
+            name: "HighlightableText",
+            targets: ["HighlightableText"]
         )
     ],
-    targets: [.target(name: "HighlightedText")],
+    targets: [.target(name: "HighlightableText")],
     swiftLanguageModes: [.v6]
 )
 

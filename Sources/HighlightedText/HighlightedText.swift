@@ -1,6 +1,6 @@
 public import SwiftUI
 
-public struct HighlightedText {
+public struct HighlightableText {
     private let text: String
     private let highlight: String?
     private let shapeStyle: (any ShapeStyle)?
@@ -20,7 +20,7 @@ public struct HighlightedText {
 }
 
 // MARK: -
-extension HighlightedText: View {
+extension HighlightableText: View {
     public var body: some View {
         if let highlight, !highlight.isEmpty {
             let components = text.components(for: highlight)
